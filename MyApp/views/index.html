@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel='stylesheet' href='/stylesheets/bootstrap.min.css'/>
+  </head>
+  <body>
+    <table class="table table-striped table-hover">
+    <thead>
+      <tr>
+        <th>FirstName</th><th>Last Name</th><th>Year</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% for(var i=0; i<inventors.length; i++) {%>
+   <tr>
+     <td><%= inventors[i].first %></td>
+     <td><%= inventors[i].last %></td>
+     <td><%= inventors[i].year %></td>
+   </tr>
+    <% } %>
+    </tbody>
+    </table>
+  </body>
+</html>
